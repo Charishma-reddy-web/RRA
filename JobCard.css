@@ -1,0 +1,168 @@
+/* Upload Button */
+.uploadBtn {
+    cursor: pointer;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    /* Light Blue Background */
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    padding: 8px 0;
+    /* Vertical padding */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 120px;
+    /* Fixed Width for equality */
+    margin-top: 0;
+    /* Reset margin */
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.uploadBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(59, 130, 246, 0.4);
+}
+
+.referredBtn {
+    cursor: default;
+    color: #15803d;
+    /* Green */
+    background: rgba(22, 163, 74, 0.1);
+    /* Light Green tint */
+    border: 1px solid rgba(22, 163, 74, 0.3);
+    padding: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 120px;
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: none;
+    /* No shadow/hover for referred state */
+}
+
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    /* Ensure high z-index */
+}
+
+/* Modal Content */
+.resumeModal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    max-width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: relative;
+    /* For absolute positioning of close button */
+}
+
+/* Close Button (Top Right) */
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.closeBtn:hover {
+    color: #000;
+}
+
+/* Step Content */
+.modalStep h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.modalStep p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Custom File Input Button */
+.fileInputLabel {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.fileInputLabel:hover {
+    background-color: #0056b3;
+}
+
+/* Details Section */
+.autoDetails {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.detailRow span {
+    color: #666;
+}
+
+.detailRow strong {
+    color: #333;
+}
+
+.successMsg {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.submitBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submitBtn:hover {
+    background-color: #218838;
+}

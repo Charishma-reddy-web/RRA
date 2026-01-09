@@ -1,0 +1,11 @@
+import React from "react";
+import Select from "react-select";
+import "./ReferralForm.css";
+
+const countryOptions = [
+  { value: "India", label: "India" },
+  { value: "USA", label: "USA" },
+  { value: "UK", label: "United Kingdom" },
+  { value: "Canada", label: "Canada" },
+  { value: "Australia", label: "Australia" },
+];
